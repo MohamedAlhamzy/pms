@@ -538,6 +538,18 @@ html[data-theme=dark] .pms-banner-copy p{color:#3b5663}
   html[data-theme=dark] .navlinks{background:#143341}
   .pms-site-controls{margin-inline-start:auto}
 }
+/* Tablet: the copy sits below the panorama in its own soft, readable panel. */
+@media(min-width:701px) and (max-width:1024px){
+  .pms-banner-copy{width:calc(100% - 36px);max-width:none;margin:14px auto 18px;padding:24px 29px;background:rgba(255,255,255,.94);border:1px solid #d7e9e7;border-radius:14px;box-shadow:0 8px 24px #133b5414}
+}
+/* Phones: a translucent white backdrop protects the text from the sky/blue art. */
+@media(max-width:700px){
+  .pms-banner-copy{left:14px;right:14px;top:3%;width:calc(100% - 28px);padding:14px 12px 15px;background:rgba(255,255,255,.88);border:1px solid #ffffffd9;border-radius:14px;box-shadow:0 10px 30px #123d5a1e;-webkit-backdrop-filter:blur(7px);backdrop-filter:blur(7px)}
+  .pms-banner-copy .pms-eyebrow{color:#13664e}
+  .pms-banner-copy h1{color:#12344d}
+  .pms-banner-copy p{color:#304b58}
+  .pms-hero-actions{margin-top:10px}
+}
 @media(max-width:720px){
   .nav{height:78px;gap:9px}
   .nav .logo{width:111px;height:68px}
@@ -556,7 +568,7 @@ html[data-theme=dark] .pms-banner-copy p{color:#3b5663}
   html[data-language=en] .pms-banner-copy h1{font-size:clamp(20px,5.2vw,25px)}
   html[data-language=en] .pms-banner-copy p{font-size:clamp(10px,2.75vw,13px)}
 }
-@media(max-width:380px){.pms-banner-copy h1{font-size:22px}.pms-banner-copy p{font-size:11.7px}}
+@media(max-width:380px){.pms-banner-copy{top:2%;padding:11px 10px 12px}.pms-banner-copy h1{font-size:22px}.pms-banner-copy p{font-size:11.7px}}
 @media(prefers-reduced-motion:reduce){.credit-link{animation:none!important;opacity:1!important}}
 
 </style></head><body id="top">
